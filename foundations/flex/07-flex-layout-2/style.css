@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-  height: 72px;
+  /* height: 72px; */
   background: darkmagenta;
   color: white;
 }
@@ -26,4 +26,65 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* Solution */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    font-weight: 900;
+    font-size: large;
+    padding: 10px;
+    font-size: 32px;
+}
+
+.content {
+    display: flex;
+}
+
+
+.sidebar {
+    flex-shrink: 0;
+    padding: 16px;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cards-container {
+    padding: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.card {
+    flex-shrink: 0;
+    flex-basis: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

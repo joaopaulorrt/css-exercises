@@ -24,3 +24,39 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* solution */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 32px;
+}
+
+.plantas {
+    display: flex;
+    justify-content: space-between;
+    gap: 52px;
+    margin: 50px;
+}
+
+.plantas-especie {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0px;
+    max-width: 200px;
+}
+
+.img {
+    display: flex;
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
